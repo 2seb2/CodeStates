@@ -1,3 +1,9 @@
+.todoInsert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .background {
   position: fixed;
   z-index: 980;
@@ -15,10 +21,10 @@
 
 form {
   position: fixed;
-  z-index: 990;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 990;
   flex-direction: column;
   width: 300px;
   height: 150px;
@@ -49,6 +55,27 @@ form > button {
 
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: 0.1s background ease-in;
+}
+
+.rewrite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rewrite > svg {
+  margin: 20px 10px 0px 10px;
+
+  background: none;
+  outline: none;
+  border: none;
+
+  color: #7540EE;
+  font-size: 1.5rem;
+
   cursor: pointer;
   transition: 0.1s background ease-in;
 }

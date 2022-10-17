@@ -2,11 +2,17 @@ import React from 'react'
 import TodoItem from './TodoItem.js'
 import './TodoList.css'
 
-function TodoList({ todos, onCheckToggle }) {
+function TodoList({ todos, onCheckToggle, onInsertToggle, onChangeSelectedTodo }) {
   return (
     <div className='TodoList'>
       {todos.map(todo => (
-        <TodoItem todo={todo} key={todo.id} onCheckToggle={onCheckToggle}/>
+        <TodoItem 
+          todo={todo} 
+          key={todo.id} 
+          onCheckToggle={onCheckToggle} 
+          onInsertToggle={onInsertToggle}
+          onChangeSelectedTodo={onChangeSelectedTodo}
+        />
       ))}
     </div>
   )
