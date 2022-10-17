@@ -5,27 +5,27 @@ import TodoList from './components/TodoList';
 import TodoInsert from './components/TodoInsert';
 import { RiAddCircleFill } from 'react-icons/ri';
 
-let nextId = 4;
+let nextId = 0;
 
 function App() {
   const [selectedTodo, setSelectedTodo] = useState(null);
   const [insertToggle, setInsertToggle] = useState(false);
   const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: "할 일 1",
-      checked: true,
-    },
-    {
-      id: 2,
-      text: "할 일 2",
-      checked: false,
-    },
-    {
-      id: 3,
-      text: "할 일 3",
-      checked: true,
-    },
+    // {
+    //   id: 1,
+    //   text: "할 일 1",
+    //   checked: true,
+    // },
+    // {
+    //   id: 2,
+    //   text: "할 일 2",
+    //   checked: false,
+    // },
+    // {
+    //   id: 3,
+    //   text: "할 일 3",
+    //   checked: true,
+    // },
   ]);
 
   const onInsertToggle = () => {  // 팝업 닫고 열기 (불린값을 이용해)
