@@ -1,0 +1,15 @@
+.todo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-todo-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 4rem;
+  margin-right: 14px;
+  color: #7540EE;
+}
